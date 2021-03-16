@@ -1,0 +1,27 @@
+/*
+0 - 600PX: Phone 
+600 - 900px: Table portrait 
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Colors */
+/* Grid breakpoints */
+.summarySmallDisclaimer {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+  color: #7D7D7D; }
+
+.summaryItemContainer {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 16px; }
+
+.summarySmallContent .summaryItemContainer:last-child {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #7D7D7D; }

@@ -1,0 +1,122 @@
+/*
+0 - 600PX: Phone 
+600 - 900px: Table portrait 
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Colors */
+/* Grid breakpoints */
+.link--buy-with-cnpj {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 37px;
+  padding: 0 16px;
+  position: relative; }
+
+.link--buy-with-cnpj::after {
+  content: '';
+  display: block;
+  height: 23px;
+  width: 1px;
+  background: #fff;
+  position: absolute;
+  top: 9px;
+  right: 0; }
+
+.link--not-found-btn {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  display: block;
+  line-height: 42px;
+  max-width: 330px;
+  text-align: center;
+  background: #292929;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 32px auto 0 auto; }
+
+.link--whatsapp-link {
+  display: block;
+  height: 35px;
+  width: 35px;
+  background: url(assets/svgs/whatsapp.svg) no-repeat center center !important;
+  background-size: contain;
+  position: fixed;
+  bottom: 80px;
+  right: 14px; }
+
+.buttonLink--inst-nav {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  font-variant: small-caps;
+  color: #7d7d7d;
+  box-sizing: border-box;
+  background: none;
+  border-radius: unset;
+  border: none;
+  transition: ease-in .22s all; }
+
+.buttonLink--inst-nav:active,
+.buttonLink--inst-nav:hover {
+  background: #292929;
+  color: #fff; }
+
+.link--pedidos-antigos {
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  top: 31px;
+  right: 33px;
+  color: #fff;
+  background: #292929;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 10px;
+  line-height: 42px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 30px; }
+
+.label--inst-nav {
+  text-align: left; }
+
+@media only screen and (max-width: 1026px) {
+  .link--pedidos-antigos {
+    position: static;
+    float: right; } }
+
+.link--top-bar {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  width: fit-content;
+  margin: 7px 0; }

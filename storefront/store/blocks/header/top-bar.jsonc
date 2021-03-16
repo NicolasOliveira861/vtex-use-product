@@ -1,0 +1,19 @@
+{
+  "flex-layout.row#top-bar":{
+    "children":[
+      "link#top-bar"
+    ],
+    "props":{
+      "blockClass": "top-bar",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": false
+    }
+  },
+  "link#top-bar":{
+    "props": {
+      "href": "Ganhe dinheiro vendendo Santa Helena",
+      "label": "Ganhe dinheiro vendendo Santa Helena",
+      "blockClass": "top-bar"
+    }
+  }
+}

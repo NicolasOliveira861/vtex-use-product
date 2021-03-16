@@ -1,0 +1,101 @@
+/*
+0 - 600PX: Phone 
+600 - 900px: Table portrait 
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Colors */
+/* Grid breakpoints */
+.sliderLeftArrow {
+  display: block;
+  background: url(assets/svgs/slide-left-arrow.svg) no-repeat center center !important;
+  background-size: contain; }
+
+.sliderRightArrow {
+  display: block;
+  background: url(assets/svgs/slide-right-arrow.svg) no-repeat center center !important;
+  background-size: contain; }
+
+.caretIcon {
+  opacity: 0; }
+
+.paginationDotsContainer {
+  align-items: center; }
+
+.paginationDot {
+  background: #c4c4c4;
+  height: 8px !important;
+  width: 8px !important; }
+
+.paginationDot--isActive {
+  background: transparent;
+  border: 1px solid #c4c4c4;
+  height: 13px !important;
+  width: 13px !important; }
+
+/* M3 DEALS SLIDER  */
+/* M3 BRANDS SLIDER  */
+.sliderLayoutContainer--m3-brands-slide {
+  width: 799px !important;
+  max-width: 799px; }
+
+.slide--m3-brands-slide {
+  background: #fff;
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.14); */
+  margin: 8px; }
+
+.imageElement--m3-brands-slide {
+  max-height: unset !important; }
+
+.sliderLayoutContainer--inst-nav {
+  max-width: 1127px;
+  margin: 23px auto 38px auto; }
+
+.paginationDotsContainer--inst-nav {
+  display: none; }
+
+.slide--inst-nav {
+  width: fit-content !important; }
+
+@media only screen and (max-width: 1025px) {
+  .sliderLayoutContainer--m3-brands-slide {
+    width: 100% !important; }
+  .sliderLayoutContainer--m3-brands-slide {
+    width: 100% !important;
+    max-width: 100%;
+    padding: 0 0px; }
+  .slide--m3-brands-slide {
+    box-shadow: none;
+    margin: 8px; }
+  .slide--m3-brands-slide .slideChildrenContainer--m3-brands-slide {
+    width: 187px;
+    height: 149px;
+    background: #fff;
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.14); */
+    margin: 0 auto; } }
+
+/* M3 MAIN SLIDER */
+/* ---------------------------------------------------------------------------------------- */
+.paginationDotsContainer--m3-main-slider {
+  margin-bottom: 12px; }
+
+/* M3 SHELF SLIDER  */
+/* ---------------------------------------------------------------------------------------------------------------- */
+.slideChildrenContainer--m3-shelf-products-slide {
+  padding: 8px; }
+
+.paginationDot--m3-shelf-products-slide {
+  background: #c4c4c4;
+  height: 8px !important;
+  width: 8px !important; }
+
+.paginationDot--m3-shelf-products-slide--isActive {
+  background: transparent;
+  border: 1px solid #c4c4c4;
+  height: 13px !important;
+  width: 13px !important; }
+
+.paginationDotsContainer--m3-shelf-products-slide {
+  margin-bottom: none; }

@@ -1,0 +1,33 @@
+/*
+0 - 600PX: Phone 
+600 - 900px: Table portrait 
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Colors */
+/* Grid breakpoints */
+.brandName--m3-shelf {
+  color: #7d7d7d;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: capitalize;
+  text-align: center; }
+
+.nameContainer--m3-shelf {
+  margin: 0;
+  padding: 7px 0; }
+
+.element--m3-shelf-product {
+  position: relative; }
+
+.element--m3-shelf-product :global(.vtex-button) {
+  background: #292929;
+  border: none;
+  border-radius: 5px;
+  color: #fff; }

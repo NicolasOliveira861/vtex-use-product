@@ -1,0 +1,48 @@
+/*
+0 - 600PX: Phone 
+600 - 900px: Table portrait 
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Colors */
+/* Grid breakpoints */
+.arrowLeft {
+  display: block;
+  background: url(assets/svgs/slide-left-arrow.svg) no-repeat center center !important;
+  background-size: contain; }
+
+.arrowRight {
+  display: block;
+  background: url(assets/svgs/slide-right-arrow.svg) no-repeat center center !important;
+  background-size: contain; }
+
+.caretIcon {
+  opacity: 0; }
+
+.paginationDotsContainer {
+  align-items: center; }
+
+.dot {
+  background: #c4c4c4;
+  height: 8px !important;
+  width: 8px !important; }
+
+.dot--isActive {
+  background: transparent;
+  border: 1px solid #fff;
+  height: 13px !important;
+  width: 13px !important; }
+
+.title--m3-shelf-product {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #c4c4c4; }
+
+.sliderContainer--m3-shelf-product {
+  padding: 0 30px; }
