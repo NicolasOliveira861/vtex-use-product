@@ -1,0 +1,21 @@
+{
+    "name": "checkout",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "dev:checkout": "cross-env NODE_ENV=development gulp watchCheckout"
+    },
+    "dependencies": {
+        "del": "^6.0.0",
+        "glob": "^7.1.6",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-concat": "^2.6.1",
+        "gulp-connect": "^5.7.0",
+        "gulp-if": "^3.0.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^4.1.0",
+        "gulp-sourcemaps": "^3.0.0"
+    }
+}

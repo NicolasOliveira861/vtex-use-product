@@ -8,80 +8,81 @@
  * blocks, or if the app is simple enough that it doesn't warrant splitting the file.
  */
 {
-  "store.login": {
-    "blocks": ["login-content#default"]
-  },
-
-  "login-content#default": {
-    "props": {
-      "isInitialScreenOptionOnly": false,
-      "defaultOption": 1,
-      "showPasswordVerificationIntoTooltip": true
+    "store.login": {
+        "blocks": [
+            "login-content#default"
+        ]
+    },
+    "login-content#default": {
+        "props": {
+            "isInitialScreenOptionOnly": false,
+            "defaultOption": 1,
+            "showPasswordVerificationIntoTooltip": true
+        }
+    },
+    "product-price": {
+        "props": {
+            "showSavings": true,
+            "showInstallments": true
+        }
+    },
+    "product-summary.shelf": {
+        "children": [
+            "stack-layout#prodsum",
+            "product-summary-name",
+            "product-summary-space",
+            "product-list-price",
+            "flex-layout.row#selling-price-savings",
+            "product-installments#summary",
+            "add-to-cart-button"
+        ]
+    },
+    "product-summary-image#shelf": {
+        "props": {
+            "showBadge": false,
+            "aspectRatio": "1:1",
+            "maxHeight": 300
+        }
+    },
+    "stack-layout#prodsum": {
+        "children": [
+            "product-summary-image#shelf"
+            // "modal-trigger#quickview"
+        ]
+    },
+    "product-summary-image": {
+        "props": {
+            "height": 220
+        }
+    },
+    "product-specification-badges": {
+        "props": {
+            "specificationGroupName": "allSpecifications",
+            "displayValue": "SPECIFICATION_NAME",
+            "visibleWhen": "True"
+        }
+    },
+    "allowed-content#price": {
+        "children": [
+            "product-summary-price",
+            "product-summary-buy-button"
+        ]
+    },
+    "disallowed-content#price": {
+        "children": []
+    },
+    "shelf.relatedProducts": {
+        "blocks": [
+            "product-summary.shelf#m3-shelf-product"
+        ],
+        "props": {
+            "blockClass": "m3-shelf-product",
+            "recommendation": "view",
+            "productList": {
+                "titleText": "VEJA TAMBÉM",
+                "itemsPerPage": 4,
+                "gap": "ph3"
+            }
+        }
     }
-  },
-  "product-price": {
-    "props": {
-      "showSavings": true,
-      "showInstallments": true
-    }
-  },
-  "product-summary.shelf": {
-    "children": [
-      "stack-layout#prodsum",
-      "product-summary-name",
-      "product-summary-space",
-      "product-list-price",
-      "flex-layout.row#selling-price-savings",
-      "product-installments#summary",
-      "add-to-cart-button"
-    ]
-  },
-
-  "product-summary-image#shelf": {
-    "props": {
-      "showBadge": false,
-      "aspectRatio": "1:1",
-      "maxHeight": 300
-    }
-  },
-  "stack-layout#prodsum": {
-    "children": [
-      "product-summary-image#shelf"
-      // "modal-trigger#quickview"
-    ]
-  },
-
-  "product-summary-image": {
-    "props": {
-      "height": 220
-    }
-  },
-
-  "product-specification-badges": {
-    "props": {
-      "specificationGroupName": "allSpecifications",
-      "displayValue": "SPECIFICATION_NAME",
-      "visibleWhen": "True"
-    }
-  },
-
-
-  "allowed-content#price": {
-    "children": ["product-summary-price", "product-summary-buy-button"]
-  },
-  "disallowed-content#price": {
-    "children": []
-  },
-  "shelf.relatedProducts": {
-    "blocks": ["product-summary.shelf#m3-shelf-product"],
-    "props": {
-      "blockClass": "m3-shelf-product",
-      "recommendation": "view",
-      "productList": {
-        "titleText": "VEJA TAMBÉM",
-        "itemsPerPage": 4,
-        "gap": "ph3"
-      }
-    }
-  }
 }

@@ -14,7 +14,8 @@
     },
     "workspaces": [
         "custom",
-        "storefront"
+        "storefront",
+        "checkout"
     ],
     "devDependencies": {
         "concurrently": "^6.0.0"

@@ -1,6 +1,7 @@
 {
     "name": "custom",
     "license": "Private",
+    "version": "1.0.0",
     "scripts": {
         "lint": "eslint --ext js,jsx,ts,tsx .",
         "format": "prettier --write \"**/*.{ts,js,json}\"",
