@@ -7180,7 +7180,7 @@ webpack-sources@^2.1.1:
     source-list-map "^2.0.1"
     source-map "^0.6.1"
 
-webpack@^5.26.0:
+webpack@^5.26.1:
   version "5.26.1"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.26.1.tgz#164ce73703f88936925dfe843b85806145f4d1e9"
   integrity sha512-yepddlLlSfXq9NEIl5udTbETC4kG4UMzdeY4KJfaznFbN1SEIobj89aVVfh/Xei/pKPofGmC8hVT2CJ3Hl/8VQ==

@@ -10,7 +10,9 @@
         "vfix:custom": "cd custom && vtex unlink && vtex link",
         "vfix:storefront": "cd storefront && vtex unlink && vtex link",
         "vlink": "concurrently \"yarn vlink:custom\" \"yarn vlink:storefront\"",
-        "vfix": "concurrently \"yarn vfix:custom\" \"yarn vfix:storefront\""
+        "vfix": "concurrently \"yarn vfix:custom\" \"yarn vfix:storefront\"",
+        "dev:checkout": "cd checkout && yarn dev",
+        "prod:checkout": "checkout && yard prod"
     },
     "workspaces": [
         "custom",

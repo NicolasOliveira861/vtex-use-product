@@ -9,8 +9,7 @@
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev:": "gulp storefront",
-        "prod": "cross-env NODE_ENV=production gulp build"
+        "dev:": "gulp storefront"
     },
     "repository": {
         "type": "git",
@@ -20,7 +19,6 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "cross-env": "^7.0.3",
         "glob": "^7.1.6",
         "gulp": "^4.0.2",
         "gulp-concat": "^2.6.1",
@@ -28,23 +26,5 @@
         "gulp-wait": "0.0.2",
         "node-sass": "^5.0.0"
     },
-    "babel": {
-        "presets": [
-            "@babel/env",
-            "@babel/react"
-        ]
-    },
-    "browserslist": [
-        "defaults"
-    ],
-    "dependencies": {
-        "@babel/core": "^7.13.10",
-        "@babel/preset-env": "^7.13.10",
-        "@babel/preset-react": "^7.12.13",
-        "babel-loader": "^8.2.2",
-        "jquery": "^3.6.0",
-        "terser-webpack-plugin": "^5.1.1",
-        "webpack": "^5.26.0",
-        "webpack-merge": "^5.7.3"
-    }
+    "dependencies": {}
 }

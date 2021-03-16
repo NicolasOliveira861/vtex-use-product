@@ -21,22 +21,22 @@ const isProduction = process.env.NODE_ENV === "production";
 
 const paths = {
     styles: {
-        src: "checkout/src/arquivos/sass/*.{scss,css,sass}",
-        lib: "checkout/src/arquivos/sass/lib",
-        watch: "checkout/src/arquivos/sass/**/*.scss",
+        src: "src/arquivos/sass/*.{scss,css,sass}",
+        lib: "src/arquivos/sass/lib",
+        watch: "src/arquivos/sass/**/*.scss",
     },
     scripts: {
-        watch: "checkout/src/arquivos/js/**/*.js",
+        watch: "src/arquivos/js/**/*.js",
     },
     img: {
-        src: "checkout/src/arquivos/img/*.{png,gif,jpg}",
-        watch: "checkout/src/arquivos/img/**/*.{png,gif,jpg}",
+        src: "src/arquivos/img/*.{png,gif,jpg}",
+        watch: "src/arquivos/img/**/*.{png,gif,jpg}",
     },
     fonts: {
-        src: "checkout/src/arquivos/fonts/**.*",
+        src: "src/arquivos/fonts/**.*",
     },
     output: "dist",
-    outputStatic: "checkout/dist/arquivos",
+    outputStatic: "dist/arquivos",
     tmp: ".temp",
 };
 
@@ -136,4 +136,4 @@ exports.clean = clean;
 exports.scripts = scripts;
 exports.styles = styles;
 exports.devServer = devServer;
-exports.watchCheckout = gulp.series(build, watch);
+exports.watch = gulp.series(build, watch);
