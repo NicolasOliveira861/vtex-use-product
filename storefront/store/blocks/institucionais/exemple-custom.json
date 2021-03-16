@@ -3,7 +3,7 @@
     "blocks": ["flex-layout.row#exemple"]
   },
 
-  "flex-layout.row#login": {
+  "flex-layout.row#exemple": {
     "children": [
        "exemple"
     ],

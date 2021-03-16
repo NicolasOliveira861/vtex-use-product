@@ -1,11 +1,22 @@
 {
-  "name": "m3-template",
-  "version": "1.0.0",
-  "main": "index.js",
-  "private": true,
-  "license": "MIT",
-  "workspaces": [
-    "custom",
-    "storefront"
-  ]
+    "name": "m3-template",
+    "version": "1.0.0",
+    "main": "index.js",
+    "private": true,
+    "license": "MIT",
+    "scripts": {
+        "vlink:custom": "cd custom && vtex link",
+        "vlink:storefront": "cd storefront && vtex link",
+        "vfix:custom": "cd custom && vtex unlink && vtex link",
+        "vfix:storefront": "cd storefront && vtex unlink && vtex link",
+        "vlink": "concurrently \"yarn vlink:custom\" \"yarn vlink:storefront\"",
+        "vfix": "concurrently \"yarn vfix:custom\" \"yarn vfix:storefront\""
+    },
+    "workspaces": [
+        "custom",
+        "storefront"
+    ],
+    "devDependencies": {
+        "concurrently": "^6.0.0"
+    }
 }
