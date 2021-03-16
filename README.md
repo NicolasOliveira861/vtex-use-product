@@ -9,3 +9,5 @@
 ## Especificações de produto
 
 ## Estruturas customizadas do Master Data
+
+NODEJS >= 12
