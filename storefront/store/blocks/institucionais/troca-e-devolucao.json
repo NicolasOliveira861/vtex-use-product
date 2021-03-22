@@ -19,9 +19,9 @@
         "props": {
             "blockClass": "institucional-main-row"
         },
-        "children": ["flex-layout.row#institucional"]
+        "children": ["flex-layout.row#institucional-troca"]
     },
-    "flex-layout.row#institucional": {
+    "flex-layout.row#institucional-troca": {
         "children": ["rich-text#troca-e-devolucao"]
     },
     "rich-text#troca-e-devolucao": {

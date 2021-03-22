@@ -19,9 +19,9 @@
         "props": {
             "blockClass": "institucional-main-row"
         },
-        "children": ["flex-layout.row#institucional"]
+        "children": ["flex-layout.row#institucional-seguranca"]
     },
-    "flex-layout.row#institucional": {
+    "flex-layout.row#institucional-seguranca": {
         "children": ["rich-text#seguranca"]
     },
     "rich-text#seguranca": {
