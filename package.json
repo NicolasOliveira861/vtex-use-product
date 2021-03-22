@@ -10,8 +10,8 @@
         "vlink:storefront:build": "cd storefront && yarn dev",
         "vfix:custom": "cd custom && vtex unlink && vtex link",
         "vfix:storefront": "cd storefront && vtex unlink && vtex link",
-        "vlink": "concurrently \"yarn vlink:custom\" \"yarn vlink:storefront\" \"vlink:storefront:build\"",
-        "vfix": "concurrently \"yarn vfix:custom\" \"yarn vfix:storefront\" \"vlink:storefront:build\"",
+        "vlink": "concurrently \"yarn vlink:custom\" \"yarn vlink:storefront\" \"yarn vlink:storefront:build\"",
+        "vfix": "concurrently \"yarn vfix:custom\" \"yarn vfix:storefront\" \"yarn vlink:storefront:build\"",
         "checkout": "cd checkout && yarn dev",
         "checkout:prod": "checkout && yard prod"
     },
