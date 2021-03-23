@@ -9,6 +9,7 @@
       "node",
       "jest"
     ],
+    "lib": ["DOM"],
     "module": "esnext",
     "moduleResolution": "node",
     "target": "es2017"

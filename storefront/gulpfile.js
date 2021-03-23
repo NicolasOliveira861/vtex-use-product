@@ -98,7 +98,7 @@ gulp.task("watch", function () {
         }
 
         console.log(
-            getCurrentTimestamp() + " File: \x1b[31m" + fileName + "\x1b[0m builded."
+            getCurrentTimestamp() + " File: \x1b[32m" + fileName + "\x1b[0m builded."
         );
     });
 });

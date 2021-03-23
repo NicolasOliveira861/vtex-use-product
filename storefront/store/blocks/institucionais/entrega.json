@@ -19,9 +19,9 @@
         "props": {
             "blockClass": "institucional-main-row"
         },
-        "children": ["flex-layout.row#institucional"]
+        "children": ["flex-layout.row#institucional-entrega"]
     },
-    "flex-layout.row#institucional": {
+    "flex-layout.row#institucional-entrega": {
         "children": ["rich-text#entrega"]
     },
     "rich-text#entrega": {
