@@ -355,26 +355,30 @@
 //     error: null,
 // };
 
-$( document ).ready(function() {
-  console.log(window.props.product)
-  $(function () {
-    $("<h2>", {
-      text: window.props.product.specificationGroups[0].name,
-      class: "title"
-    }).appendTo($("body"));
-    const tableWrapper = $('<div>').appendTo($("body"))
-    const table = $('<table>').appendTo(tableWrapper)
-    // const tBody = $('<tbody>').appendTo(table)
-    $.each(
-      window.props.product.specificationGroups[0].specifications,
-      function (i, item) {
-        let splitedValues = item.values[0].split("|");
-        var $tr = $("<tr>").append(
-          $("<td>",{width:"50%"}).text(item.name),
-          $("<td>",{width:"25%"}).text(splitedValues[0]),
-          $("<td>",{width:"25%", "text-align":'end'}).text(splitedValues[1])
-        ).appendTo(table);
-      }
-    );
-  });
+$(document).ready(function () {
+    console.log(window.props.product);
+    $(function () {
+        $("<h2>", {
+            text: window.props.product.specificationGroups[0].name,
+            class: "title",
+        }).appendTo($("body"));
+        const tableWrapper = $("<div>").appendTo($("body"));
+        const table = $("<table>").appendTo(tableWrapper);
+        // const tBody = $('<tbody>').appendTo(table)
+        $.each(
+            window.props.product.specificationGroups[0].specifications,
+            function (i, item) {
+                let splitedValues = item.values[0].split("|");
+                $("<tr>")
+                    .append(
+                        $("<td>", { width: "50%" }).text(item.name),
+                        $("<td>", { width: "25%" }).text(splitedValues[0]),
+                        $("<td>", { width: "25%", "text-align": "end" }).text(
+                            splitedValues[1]
+                        )
+                    )
+                    .appendTo(table);
+            }
+        );
+    });
 });

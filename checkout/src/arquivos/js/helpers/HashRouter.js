@@ -3,32 +3,32 @@
  */
 
 export default class HashRouter {
-	constructor(routes) {
-		this.routes = routes;
-		window.addEventListener("hashchange", this.hashChange.bind(this));
-		this.init();
-	}
+    constructor(routes) {
+        this.routes = routes;
+        window.addEventListener("hashchange", this.hashChange.bind(this));
+        this.init();
+    }
 
-	hashChange(e) {
-		const from = new URL(e.oldURL).hash || "/";
-		const to = new URL(e.newURL).hash || "/";
+    hashChange(e) {
+        const from = new URL(e.oldURL).hash || "/";
+        const to = new URL(e.newURL).hash || "/";
 
-		this.routes.forEach(route => {
-			if (route.path === to) {
-				route.onEnter && route.onEnter();
-			} else if (route.path === from) {
-				route.onLeave && route.onLeave();
-			}
-		});
-	}
+        this.routes.forEach((route) => {
+            if (route.path === to) {
+                route.onEnter && route.onEnter();
+            } else if (route.path === from) {
+                route.onLeave && route.onLeave();
+            }
+        });
+    }
 
-	init() {
-		const actualHash = window.location.hash || "/";
+    init() {
+        const actualHash = window.location.hash || "/";
 
-		this.routes.forEach(route => {
-			if (route.path === actualHash) {
-				route.onEnter && route.onEnter();
-			}
-		});
-	}
+        this.routes.forEach((route) => {
+            if (route.path === actualHash) {
+                route.onEnter && route.onEnter();
+            }
+        });
+    }
 }

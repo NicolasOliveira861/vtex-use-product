@@ -17,5 +17,6 @@ module.exports = {
     rules: {
         "prettier/prettier": "error",
         "linebreak-style": ["warn", "unix"],
+        "no-undef": "off",
     },
 };

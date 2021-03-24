@@ -5,8 +5,6 @@
     "scripts": {
         "lint": "eslint --ext js,jsx,ts,tsx .",
         "format": "prettier --write \"**/*.{ts,js,json}\"",
-        "install:react": "cd react && yarn",
-        "install:node": "cd node && yarn",
         "install:all": "concurrently \"yarn install\" \"yarn install:node\""
     },
     "husky": {
@@ -26,11 +24,13 @@
         "eslint": "7.12.1",
         "eslint-config-vtex": "12.3.2",
         "eslint-config-vtex-react": "^6.2.1",
-        "eslint-plugin-react": "^7.22.0",
+        "eslint-plugin-react": "^7.23.1",
         "husky": "4.2.3",
         "lint-staged": "10.1.1",
         "prettier": "2.0.2",
         "typescript": "3.8.3"
     },
-    "dependencies": {}
+    "dependencies": {
+        "react": "^17.0.2"
+    }
 }

@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "main": "index.js",
     "private": true,
-    "license": "MIT",
+    "license": "UNLICENSED",
     "scripts": {
         "vlink:custom": "cd custom && vtex link",
         "vlink:storefront": "cd storefront && vtex link",
