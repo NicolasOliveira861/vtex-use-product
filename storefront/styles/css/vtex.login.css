@@ -17,31 +17,31 @@
 .container :global(.vtex-button) {
   width: 76px;
   padding-right: 5px;
-  transition: ease-in .22s all; }
+  transition: ease-in 0.22s all; }
 
 .container :global(.vtex-button):focus,
 .container :global(.vtex-button):hover {
   outline: none;
-  background-color: #D5D5D5; }
+  background-color: #d5d5d5; }
 
 .profile {
   max-width: 59px !important;
   color: white; }
 
 .label {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
-  color: #7D7D7D; }
+  color: #7d7d7d; }
 
 .content {
   padding: 22px; }
 
 .formTitle {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -58,7 +58,7 @@
 
 .contentForm :global(.vtex-styleguide-9-x-input),
 .contentForm :global(.vtex-styleguide-9-x-input)::-webkit-input-placeholder {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -68,7 +68,7 @@
 .button :global(.vtex-button) {
   background: #292929;
   border-radius: 5px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 11px;
@@ -90,7 +90,7 @@
   border: none; }
 
 .sendButton :global(.t-small) {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 13px;
   line-height: 16px;
   text-align: center;
@@ -99,14 +99,15 @@
   color: #fff;
   text-transform: uppercase; }
 
-.sendButton :global(.t-small):focus, .sendButton :global(.vtex-button__label):focus {
+.sendButton :global(.t-small):focus,
+.sendButton :global(.vtex-button__label):focus {
   outline: none; }
 
 .arrowBackIcon {
   color: #292929; }
 
 .backButton :global(.t-small) {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 12px;
   line-height: 16px;
@@ -116,7 +117,7 @@
   color: #292929; }
 
 .forgotPasswordLink {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -125,7 +126,7 @@
   color: #292929; }
 
 .dontHaveAccount {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;

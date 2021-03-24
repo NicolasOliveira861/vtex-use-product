@@ -2,10 +2,11 @@
     "name": "checkout",
     "version": "1.0.0",
     "main": "index.js",
-    "license": "MIT",
+    "license": "UNLICENSED",
     "scripts": {
         "dev": "cross-env NODE_ENV=development gulp watch",
-        "prod": "cross-env NODE_ENV=production gulp build"
+        "prod": "cross-env NODE_ENV=production gulp build",
+        "lint": "eslint ./src --fix"
     },
     "dependencies": {
         "@babel/plugin-transform-async-to-generator": "^7.13.0",

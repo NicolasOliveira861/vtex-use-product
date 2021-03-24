@@ -21,7 +21,7 @@
   margin-top: 20px; }
 
 .noticeListItem :global(.vtex-button__label) {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 12px;
@@ -32,7 +32,7 @@
   color: #fff; }
 
 .orderOptionsWrapper :global(.vtex-button__label) {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 12px;
@@ -48,7 +48,7 @@
   width: 100%; }
 
 .orderPaymentItem :global(.vtex-button__label) {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 12px;
@@ -65,21 +65,22 @@
   width: 100%; }
 
 .productName {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
   color: #666666; }
 
 .productPrice {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
   color: #104dcf; }
 
-.totalListItemValue, .totalListItemLabel {
+.totalListItemValue,
+.totalListItemLabel {
   color: #666666; }
 
 .productImageWrapper {
