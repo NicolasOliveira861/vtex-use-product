@@ -1,7 +1,7 @@
-// MEDIA QUERY MANAGER 
+// MEDIA QUERY MANAGER
 /*
-0 - 600PX: Phone 
-600 - 900px: Table portrait 
+0 - 600PX: Phone
+600 - 900px: Table portrait
 900 - 1200px: Tablet landscape
 [1200 - 1800] is where our nortal styles apply
 1800px + : Big desktop
@@ -54,6 +54,18 @@
 			$width: $width - 1px;
 		}
 		@media only screen and (#{$type}-width: $width) {
+			@content;
+		}
+	}
+}
+
+@mixin mq_range($min, $max) {
+	@if (map_has_key($grid-breakpoints, $min) and map_has_key($grid-breakpoints, $max)) {
+
+		$width_max: map_get($grid-breakpoints, $max);
+		$width_min: map_get($grid-breakpoints, $min);
+		$width_max: $width_max - 1px;
+		@media only screen and (min-width: $width_min) and (max-width:$width_max) {
 			@content;
 		}
 	}
