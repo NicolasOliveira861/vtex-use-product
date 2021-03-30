@@ -5,6 +5,7 @@
     "private": true,
     "license": "UNLICENSED",
     "scripts": {
+        "prepare": "husky install",
         "vlink:custom": "cd custom && vtex link",
         "vlink:storefront": "cd storefront && vtex link",
         "vlink:storefront:build": "cd storefront && yarn dev",
@@ -16,7 +17,8 @@
         "checkout:prod": "yarn workspace checkout prod",
         "lint:storefront": "yarn workspace storefront lint",
         "lint:checkout": "yarn workspace checkout lint",
-        "lint:custom": "yarn workspace custom lint"
+        "lint:custom": "yarn workspace custom lint",
+        "lint": "yarn lint:custom && yarn lint:checkout && lint:storefront"
     },
     "workspaces": [
         "custom",
@@ -26,18 +28,7 @@
     "devDependencies": {
         "concurrently": "^6.0.0",
         "husky": "^5.2.0",
+        "lerna": "^4.0.0",
         "lint-staged": "^10.5.4"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "*.{ts,js,tsx,jsx}": [
-            "yarn workspace storefront lint",
-            "yarn workspace custom lint",
-            "yarn workspace checkout lint"
-        ]
     }
 }
