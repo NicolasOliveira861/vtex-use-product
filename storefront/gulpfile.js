@@ -61,12 +61,11 @@ gulp.task("sass", function (done) {
     filteredFiles.forEach((file) => {
         const fileName = file;
 
-        gulp
-            .src([
-                "styles/sass/utils/_mixin.scss",
-                "styles/sass/utils/_vars.scss",
-                pathsStore.styles.styles + fileName,
-            ])
+        gulp.src([
+            "styles/sass/utils/_mixin.scss",
+            "styles/sass/utils/_vars.scss",
+            pathsStore.styles.styles + fileName,
+        ])
             .pipe(concat(fileName))
             .pipe(sass().on("error", sass.logError))
             .pipe(gulp.dest(pathsStore.styles.dest));
@@ -81,24 +80,25 @@ gulp.task("watch", function () {
         fileName = path.basename(fileName);
 
         if (fileName.includes(".css")) {
-            gulp
-                .src(pathsStore.styles.styles + fileName)
+            gulp.src(pathsStore.styles.styles + fileName)
                 .pipe(concat(fileName))
                 .pipe(gulp.dest(pathsStore.styles.dest));
         } else {
-            gulp
-                .src([
-                    "styles/sass/utils/_mixin.scss",
-                    "styles/sass/utils/_vars.scss",
-                    pathsStore.styles.styles + fileName,
-                ])
+            gulp.src([
+                "styles/sass/utils/_mixin.scss",
+                "styles/sass/utils/_vars.scss",
+                pathsStore.styles.styles + fileName,
+            ])
                 .pipe(concat(fileName))
                 .pipe(sass().on("error", sass.logError))
                 .pipe(gulp.dest(pathsStore.styles.dest));
         }
 
         console.log(
-            getCurrentTimestamp() + " File: \x1b[32m" + fileName + "\x1b[0m builded."
+            getCurrentTimestamp() +
+                " File: \x1b[32m" +
+                fileName +
+                "\x1b[0m builded."
         );
     });
 });

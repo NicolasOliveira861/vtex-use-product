@@ -1,51 +1,51 @@
-fetch('/api/dataentities/faleconosco/schemas/v2', {
-    "method": "PUT",
+fetch("/api/dataentities/faleconosco/schemas/v2", {
+    method: "PUT",
     headers: {
-        "content-type": "application/json" // Indicates the content
+        "content-type": "application/json", // Indicates the content
     },
     body: JSON.stringify({
-        "title": "contato",
-        "type": "object",
-        "properties": {
-            "name": {
-                "type": "string",
-                "maxLength": 100,
-                "title": "Nome"
+        title: "contato",
+        type: "object",
+        properties: {
+            name: {
+                type: "string",
+                maxLength: 100,
+                title: "Nome",
             },
-            "description": {
-                "type": "string",
-                "maxLength": 100,
-                "title": "description"
+            description: {
+                type: "string",
+                maxLength: 100,
+                title: "description",
             },
-            "email": {
-                "type": "string",
-                "format": "email",
-                "title": "Email"
+            email: {
+                type: "string",
+                format: "email",
+                title: "Email",
             },
-            "message": {
-                "type": "string",
-                "maxLength": 100,
-                "title": "Message"
+            message: {
+                type: "string",
+                maxLength: 100,
+                title: "Message",
             },
-            "city": {
-                "type": "string",
-                "maxLength": 100,
-                "title": "Cidade"
+            city: {
+                type: "string",
+                maxLength: 100,
+                title: "Cidade",
             },
-            "phone": {
-                "type": "string",
-                "title": "Telefone"
+            phone: {
+                type: "string",
+                title: "Telefone",
             },
-            "subject": {
-                "type": "string",
-                "maxLength": 100,
-                "title": "Subject"
+            subject: {
+                type: "string",
+                maxLength: 100,
+                title: "Subject",
             },
-            "state": {
-                "type": "string",
-                "maxLength": 2,
-                "title": "Estado",
-                "enum": [
+            state: {
+                type: "string",
+                maxLength: 2,
+                title: "Estado",
+                enum: [
                     "AC",
                     "AL",
                     "AP",
@@ -72,11 +72,11 @@ fetch('/api/dataentities/faleconosco/schemas/v2', {
                     "SC",
                     "SP",
                     "SE",
-                    "TO"
-                ]
-            }
+                    "TO",
+                ],
+            },
         },
-        "required": [
+        required: [
             "name",
             "description",
             "email",
@@ -84,11 +84,11 @@ fetch('/api/dataentities/faleconosco/schemas/v2', {
             "city",
             "phone",
             "state",
-            "subject"
+            "subject",
         ],
         "v-security": {
-            "allowGetAll": false,
-            "publicWrite": [
+            allowGetAll: false,
+            publicWrite: [
                 "name",
                 "description",
                 "email",
@@ -96,31 +96,32 @@ fetch('/api/dataentities/faleconosco/schemas/v2', {
                 "city",
                 "phone",
                 "state",
-                "subject"
+                "subject",
             ],
-            "publicJsonSchema": true
+            publicJsonSchema: true,
         },
         "v-triggers": [
             {
-                "name": "insert-contato-table",
-                "active": true,
-                "condition": "",
-                "action": {
-                    "type": "save",
-                    "dataEntity": "FL",
-                    "json": {
-                        "name": "{!name}",
-                        "description": "{!description}",
-                        "email": "{!email}",
-                        "city": "{!city}",
-                        "phone": "{!phone}",
-                        "state": "{!state}",
-                        "subject": "{!subject}",
-                        "message": "{!message}"
-                    }
-                }
-            }
-        ]
-    }
-    )
-}).then(res => res.json()).then(res => console.log(res))
+                name: "insert-contato-table",
+                active: true,
+                condition: "",
+                action: {
+                    type: "save",
+                    dataEntity: "FL",
+                    json: {
+                        name: "{!name}",
+                        description: "{!description}",
+                        email: "{!email}",
+                        city: "{!city}",
+                        phone: "{!phone}",
+                        state: "{!state}",
+                        subject: "{!subject}",
+                        message: "{!message}",
+                    },
+                },
+            },
+        ],
+    }),
+})
+    .then((res) => res.json())
+    .then((res) => console.log(res));

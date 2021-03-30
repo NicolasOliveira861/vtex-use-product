@@ -1,23 +1,11 @@
 {
     "name": "custom",
-    "license": "Private",
+    "license": "UNLICENSED",
     "version": "1.0.0",
     "scripts": {
-        "lint": "eslint --ext js,jsx,ts,tsx .",
+        "lint": "eslint --ext js,jsx,ts,tsx . --fix",
         "format": "prettier --write \"**/*.{ts,js,json}\"",
-        "install:react": "cd react && yarn",
-        "install:node": "cd node && yarn",
         "install:all": "concurrently \"yarn install\" \"yarn install:node\""
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "*.{ts,js,tsx,jsx}": [
-            "eslint --fix"
-        ]
     },
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^4.18.0",
@@ -26,11 +14,14 @@
         "eslint": "7.12.1",
         "eslint-config-vtex": "12.3.2",
         "eslint-config-vtex-react": "^6.2.1",
-        "eslint-plugin-react": "^7.22.0",
-        "husky": "4.2.3",
+        "eslint-plugin-react": "^7.23.1",
+        "husky": "^5.2.0",
         "lint-staged": "10.1.1",
         "prettier": "2.0.2",
         "typescript": "3.8.3"
     },
-    "dependencies": {}
+    "dependencies": {
+        "husky": "^5.2.0",
+        "react": "^17.0.2"
+    }
 }
