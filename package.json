@@ -22,6 +22,7 @@
     },
     "workspaces": [
         "custom",
+        "custom/react",
         "storefront",
         "checkout"
     ],
