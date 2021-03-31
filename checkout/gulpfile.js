@@ -16,7 +16,7 @@ const gulp = require("gulp"),
  */
 
 const webpack = require("webpack");
-const pacote = require("./package.json");
+const pacote = require("../package.json");
 
 const isProduction = process.env.NODE_ENV === "production";
 
@@ -61,7 +61,7 @@ function styles() {
         )
         .pipe(
             rename({
-                prefix: pacote.shopName + "--",
+                prefix: pacote.name + "--",
                 extname: ".css",
             })
         )
