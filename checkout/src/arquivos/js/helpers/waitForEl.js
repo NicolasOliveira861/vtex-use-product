@@ -5,12 +5,14 @@
  * @param {function} callback Função a ser executada quando tal elemento existir
  */
 
-export default function waitForEl(selector, callback) {
-    if (jQuery(selector).length) {
-        callback(jQuery(selector));
-    } else {
-        setTimeout(function () {
-            waitForEl(selector, callback);
-        }, 100);
-    }
+export default function waitForEl(selector) {
+    return new Promise((resolve) => {
+        if (jQuery(selector).length) {
+            resolve(jQuery(selector));
+        } else {
+            setTimeout(function () {
+                waitForEl(selector, callback);
+            }, 100);
+        }
+    });
 }
