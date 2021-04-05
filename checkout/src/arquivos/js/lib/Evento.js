@@ -22,4 +22,4 @@ var Evento = function () {
     }.bind(_this);
 };
 
-module.exports = Evento;
+export default Evento;

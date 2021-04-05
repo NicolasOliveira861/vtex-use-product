@@ -7,7 +7,7 @@
 
 export default function waitForEl(selector, callback) {
     if (jQuery(selector).length) {
-        callback();
+        callback(jQuery(selector));
     } else {
         setTimeout(function () {
             waitForEl(selector, callback);

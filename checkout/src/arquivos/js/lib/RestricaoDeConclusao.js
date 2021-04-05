@@ -102,4 +102,4 @@ var RestricaoDeConculsao = function (funcaoDeAvaliacao, mensagemDeErro) {
     _this.inicializar();
 };
 
-module.exports = RestricaoDeConculsao;
+export default RestricaoDeConculsao;

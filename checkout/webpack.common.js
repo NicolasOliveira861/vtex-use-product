@@ -1,11 +1,9 @@
 const webpack = require("webpack");
 const path = require("path");
-var shopName = require("../storefront/package.json").shopName;
+var shopName = require("../package.json").name;
 /**
  * Configuração do webpack
  */
-
-const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
     entry: {
