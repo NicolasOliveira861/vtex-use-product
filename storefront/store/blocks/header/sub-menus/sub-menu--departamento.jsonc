@@ -70,7 +70,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "categoryId": 7,
+                "categoryId": 1,
                 "text": "Departamento"
             }
         }
@@ -83,7 +83,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "categoryId": 7,
+                "categoryId": 1,
                 "text": "Cuida Bem"
             }
         }
@@ -96,7 +96,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "categoryId": 7,
+                "categoryId": 1,
                 "text": "Paçoquita"
             }
         }
@@ -109,7 +109,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "categoryId": 7,
+                "categoryId": 1,
                 "text": "Santa Helena"
             }
         }
@@ -122,7 +122,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "categoryId": 7,
+                "categoryId": 1,
                 "text": "VER TODOS"
             }
         }
@@ -187,7 +187,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "categoryId": 7,
+                "categoryId": 1,
                 "text": "Departamento"
             }
         },
