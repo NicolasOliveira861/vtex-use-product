@@ -28,5 +28,8 @@
     },
     "store.custom#exemple": {
         "path": "/exemple"
+    },
+    "store.custom#register": {
+        "path": "/register"
     }
 }
