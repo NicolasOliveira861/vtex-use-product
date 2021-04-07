@@ -15,7 +15,7 @@ export const M3CepField: StorefrontFunctionComponent<FieldProps> = (
     const handleCepChange = (e: React.FormEvent<HTMLInputElement>) => {
         const { value } = e.currentTarget;
         const cleanCep = value.replace("-", "").replace("_", "").trim();
-        console.log(cleanCep);
+
         if (cleanCep.length === 8 && cepConsult <= 2) {
             cep(cleanCep).then((data: CEP) => {
                 setFieldValue("cidade", data.city);

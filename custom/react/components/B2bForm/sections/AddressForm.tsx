@@ -9,13 +9,13 @@ export const AddressForm: StorefrontFunctionComponent = () => {
         <section className={styles.section}>
             <h2 className={styles.sectionTitle}>ENDEREÇO COMERCIAL</h2>
             <div className={styles.sectionGroup}>
-                <M3CepField name="cep" label="CÓDIGO POSTAL:"></M3CepField>
-                <M3Field name="endereco" label="ENDEREÇO:"></M3Field>
-                <M3Field name="numero" label="NÚMERO:" type="number"></M3Field>
-                <M3Field name="complemento" label="COMPLEMENTO:"></M3Field>
-                <M3Field name="bairro" label="BAIRRO:"></M3Field>
-                <M3Field name="cidade" label="CIDADE:"></M3Field>
-                <M3Field name="estado" label="ESTADO:"></M3Field>
+                <M3CepField name="postalCode" label="CÓDIGO POSTAL:"></M3CepField>
+                <M3Field name="street" label="ENDEREÇO:"></M3Field>
+                <M3Field name="number" label="NÚMERO:" type="number"></M3Field>
+                <M3Field name="complement" label="COMPLEMENTO:"></M3Field>
+                <M3Field name="neighborhood" label="BAIRRO:"></M3Field>
+                <M3Field name="city" label="CIDADE:"></M3Field>
+                <M3Field name="state" label="ESTADO:"></M3Field>
             </div>
         </section>
     );

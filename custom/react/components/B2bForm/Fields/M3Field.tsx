@@ -13,6 +13,7 @@ export interface FieldProps {
 export const M3Field: StorefrontFunctionComponent<FieldProps> = (
     { type, name, label }: FieldProps) => {
     const { values, touched, handleChange, handleBlur, errors } = useFormikContext<FormFields>();
+
     return <div className={styles.fieldGroup}>
         <label htmlFor={name} className={styles.fieldLabel}>{label}</label>
         <input

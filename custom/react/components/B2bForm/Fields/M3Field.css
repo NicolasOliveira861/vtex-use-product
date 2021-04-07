@@ -1,11 +1,10 @@
 .fieldGroup {
-
 }
 
 .fieldLabel {
-
+    display: block;
 }
 
 .fieldInput {
-
+    display: block;
 }

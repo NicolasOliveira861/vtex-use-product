@@ -1,5 +1,5 @@
 import React from "react";
-import { Formik } from "formik";
+import { Formik, FormikHelpers } from "formik";
 
 import styles from "./B2bForm.css";
 import { RegisterSchema } from "./B2bFormValidation";
@@ -8,44 +8,46 @@ import { ContactForm } from "./sections/ContactForm";
 import { CompanyForm } from "./sections/CompanyForm";
 
 export interface FormFields {
-    cnpj: string;
-    cep: string;
-    endereco: string;
-    complemento: string;
-    numero: string;
-    bairro: string;
-    cidade: string;
-    estado: string;
-    razaoSocial: string;
-    inscricaoEstadual: string;
-    nomeFantasia: string;
-    telefoneComercial: string;
-    telefone: string;
-    nome: string;
+    corporateDocument: string;
+    postalCode: string;
+    street: string;
+    complement: string;
+    number: string;
+    neighborhood: string;
+    city: string;
+    state: string;
+    corporateName: string;
+    stateRegistration: string;
+    tradeName: string;
+    businessPhone: string;
+    phone: string;
+    firstName: string;
+    lastName: string;
     email: string;
 }
 
 const initialValues: FormFields = {
-    cnpj: "",
-    cep: "",
-    endereco: "",
-    complemento: "",
-    numero: "",
-    bairro: "",
-    cidade: "",
-    estado: "",
-    razaoSocial: "",
-    inscricaoEstadual: "",
-    nomeFantasia: "",
-    telefoneComercial: "",
-    telefone: "",
-    nome: "",
+    corporateDocument: "",
+    postalCode: "",
+    street: "",
+    complement: "",
+    number: "",
+    neighborhood: "",
+    city: "",
+    state: "",
+    corporateName: "",
+    stateRegistration: "",
+    tradeName: "",
+    businessPhone: "",
+    phone: "",
+    firstName: "",
+    lastName: "",
     email: "",
 };
 
 
 export const B2bForm: StorefrontFunctionComponent = () => {
-    const onSubmit = (values: FormFields, { setSubmitting }: any) => {
+    const onSubmit = (values: FormFields, { setSubmitting }: FormikHelpers<FormFields>) => {
         setTimeout(() => {
             alert(JSON.stringify(values, null, 2));
             setSubmitting(false);

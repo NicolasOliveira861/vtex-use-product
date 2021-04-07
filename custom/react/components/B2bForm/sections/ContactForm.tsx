@@ -9,9 +9,10 @@ export const ContactForm: StorefrontFunctionComponent = () => {
         <section className={styles.section}>
             <h2 className={styles.sectionTitle}>Contato</h2>
             <div className={styles.sectionGroup}>
-                <M3Field name="nome" label="NOME:"></M3Field>
+                <M3Field name="firstName" label="NOME:"></M3Field>
+                <M3Field name="lastName" label="NOME:"></M3Field>
                 <M3Field name="email" label="E-MAIL:"></M3Field>
-                <M3PhoneField name="telefone" label="TELEFONE:"></M3PhoneField>
+                <M3PhoneField name="phone" label="TELEFONE:"></M3PhoneField>
             </div>
         </section>
     );

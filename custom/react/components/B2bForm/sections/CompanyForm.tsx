@@ -9,11 +9,11 @@ export const CompanyForm: StorefrontFunctionComponent = () => {
         <section className={styles.section}>
             <h2 className={styles.sectionTitle}>Empresa</h2>
             <div className={styles.sectionGroup}>
-                <M3Field name="cnpj" label="CNPJ:"></M3Field>
-                <M3Field name="nomeFantasia" label="NOME FANSTASIA:"></M3Field>
-                <M3PhoneField name="telefoneComercial" label="TELEFONE COMERCIAL:"></M3PhoneField>
-                <M3Field name="inscricaoEstadual" label="INSCRIÇÃO ESTADUAL:"></M3Field>
-                <M3Field name="razaoSocial" label="RAZÃO SOCIAL:"></M3Field>
+                <M3Field name="corporateDocument" label="CNPJ:"></M3Field>
+                <M3Field name="tradeName" label="NOME FANSTASIA:"></M3Field>
+                <M3PhoneField name="businessPhone" label="TELEFONE COMERCIAL:"></M3PhoneField>
+                <M3Field name="stateRegistration" label="INSCRIÇÃO ESTADUAL:"></M3Field>
+                <M3Field name="corporateName" label="RAZÃO SOCIAL:"></M3Field>
             </div>
         </section>
     );
