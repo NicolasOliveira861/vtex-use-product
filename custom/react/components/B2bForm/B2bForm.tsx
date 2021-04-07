@@ -2,13 +2,15 @@ import React from "react";
 import { Formik, FormikHelpers } from "formik";
 
 import styles from "./B2bForm.css";
-import { RegisterSchema } from "./B2bFormValidation";
+import { registerSchema } from "./B2bFormRegisterSchema";
 import { AddressForm } from "./sections/AddressForm";
 import { ContactForm } from "./sections/ContactForm";
 import { CompanyForm } from "./sections/CompanyForm";
+import saveData from "./B2bFormSaveData";
 
 export interface FormFields {
     corporateDocument: string;
+    document: string;
     postalCode: string;
     street: string;
     complement: string;
@@ -28,6 +30,7 @@ export interface FormFields {
 
 const initialValues: FormFields = {
     corporateDocument: "",
+    document: "",
     postalCode: "",
     street: "",
     complement: "",
@@ -47,18 +50,32 @@ const initialValues: FormFields = {
 
 
 export const B2bForm: StorefrontFunctionComponent = () => {
-    const onSubmit = (values: FormFields, { setSubmitting }: FormikHelpers<FormFields>) => {
-        setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
+    const onSubmit = async (values: FormFields, { setSubmitting }: FormikHelpers<FormFields>) => {
+        try {
+            await saveData(values);
             setSubmitting(false);
-        }, 400);
+            console.log("sucesso");
+        } catch (error) {
+            setSubmitting(false);
+            if (error.response) {
+                // Request made and server responded
+                console.log(error.response.data);
+                console.log(error.response.status);
+                console.log(error.response.headers);
+            } else if (error.request) {
+                // The request was made but no response was received
+                console.log(error.request);
+            } else {
+                console.log("Error", error.message);
+            }
+        }
     };
 
     return (
         <div className={styles.container}>
             <Formik
                 initialValues={initialValues}
-                validationSchema={RegisterSchema}
+                validationSchema={registerSchema}
                 onSubmit={onSubmit}
             >
                 {({

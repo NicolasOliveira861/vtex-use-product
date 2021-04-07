@@ -216,16 +216,6 @@
   max-width: 1045px;
   margin: 0 auto; }
 
-.flexRow--drawer-top-content {
-  margin-left: -1rem;
-  margin-right: -1rem; }
-
-.flexRowContent--drawer-top-content {
-  padding: 0 8px; }
-
-.flexCol--mobile-links-container {
-  border-bottom: 1px solid #e5e5e5; }
-
 /* M3 FOOTER  */
 /* ---------------------------------------------------------------------------------------------------------------- */
 .flexRow--footer-links {
@@ -299,6 +289,16 @@
     padding: 20px 27px 0; }
   .flexRow--social-networks {
     padding: 24px 27px; } }
+
+.flexRow--drawer-top-content {
+  margin-left: -1rem;
+  margin-right: -1rem; }
+
+.flexRowContent--drawer-top-content {
+  padding: 0 8px; }
+
+.flexCol--mobile-links-container {
+  border-bottom: 1px solid #e5e5e5; }
 
 .flexRowContent--m3-shelf {
   max-width: 1088px;
