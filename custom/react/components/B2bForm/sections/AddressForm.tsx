@@ -7,7 +7,7 @@ import styles from "./SectionFormStyles.css";
 export const AddressForm: StorefrontFunctionComponent = () => {
     return (
         <section className={styles.section}>
-            <h2 className={styles.sectionTitle}>ENDEREÇO COMERCIAL</h2>
+            <h2 className={styles.sectionTitle}>Endereço Comercial</h2>
             <div className={styles.sectionGroup}>
                 <M3CepField name="postalCode" label="CÓDIGO POSTAL:"></M3CepField>
                 <M3Field name="street" label="ENDEREÇO:"></M3Field>

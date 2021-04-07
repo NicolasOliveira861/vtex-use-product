@@ -18,10 +18,10 @@ export const M3CepField: StorefrontFunctionComponent<FieldProps> = (
 
         if (cleanCep.length === 8 && cepConsult <= 2) {
             cep(cleanCep).then((data: CEP) => {
-                setFieldValue("cidade", data.city);
-                setFieldValue("endereco", data.street);
-                setFieldValue("estado", data.state);
-                setFieldValue("bairro", data.neighborhood);
+                setFieldValue("city", data.city);
+                setFieldValue("street", data.street);
+                setFieldValue("state", data.state);
+                setFieldValue("neighborhood", data.neighborhood);
             });
 
             cepConsult++;
@@ -29,7 +29,7 @@ export const M3CepField: StorefrontFunctionComponent<FieldProps> = (
         handleChange(e);
     };
 
-    return <div className={styles.fieldGroup}>
+    return <div className={`${styles.fieldGroup} ${errors[name] && touched[name] && styles.fieldGroupError}`}>
         <label htmlFor={name} className={styles.fieldLabel}>{label}</label>
         <InputMask
             mask="99999-999"

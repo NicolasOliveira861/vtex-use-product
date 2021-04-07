@@ -10,7 +10,7 @@ export const M3CnpjField: StorefrontFunctionComponent<FieldProps> = (
     { type, name, label }: FieldProps) => {
     const { values, touched, handleChange, handleBlur, errors } = useFormikContext<FormFields>();
 
-    return <div className={styles.fieldGroup}>
+    return <div className={`${styles.fieldGroup} ${errors[name] && touched[name] && styles.fieldGroupError}`}>
         <label htmlFor={name} className={styles.fieldLabel}>{label}</label>
         <InputMask
             mask="99.999.999/9999-99"

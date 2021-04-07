@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik, FormikHelpers } from "formik";
 
 import styles from "./B2bForm.css";
 import { registerSchema } from "./B2bFormRegisterSchema";
-import { AddressForm } from "./sections/AddressForm";
-import { ContactForm } from "./sections/ContactForm";
-import { CompanyForm } from "./sections/CompanyForm";
 import saveData from "./B2bFormSaveData";
+import FormStep from "./steps/formStep";
+import SuccessStep from "./steps/SuccessStep";
+import ErrorStep from "./steps/ErrorStep";
 
 export interface FormFields {
     corporateDocument: string;
@@ -50,24 +50,16 @@ const initialValues: FormFields = {
 
 
 export const B2bForm: StorefrontFunctionComponent = () => {
+    const [step, setStep] = useState<"form" | "success" | "error">("form");
+
     const onSubmit = async (values: FormFields, { setSubmitting }: FormikHelpers<FormFields>) => {
         try {
             await saveData(values);
             setSubmitting(false);
-            console.log("sucesso");
+            setStep("success");
         } catch (error) {
             setSubmitting(false);
-            if (error.response) {
-                // Request made and server responded
-                console.log(error.response.data);
-                console.log(error.response.status);
-                console.log(error.response.headers);
-            } else if (error.request) {
-                // The request was made but no response was received
-                console.log(error.request);
-            } else {
-                console.log("Error", error.message);
-            }
+            setStep("error");
         }
     };
 
@@ -78,18 +70,14 @@ export const B2bForm: StorefrontFunctionComponent = () => {
                 validationSchema={registerSchema}
                 onSubmit={onSubmit}
             >
-                {({
-                    handleSubmit,
-                    isSubmitting,
-                }) => (
-                    <form onSubmit={handleSubmit}>
-                        <ContactForm></ContactForm>
-                        <CompanyForm></CompanyForm>
-                        <AddressForm></AddressForm>
-                        <button type="submit" disabled={isSubmitting}>Submit</button>
-                    </form>
+                {() => (
+                    <>
+                        {step === "form" && (<FormStep></FormStep>)}
+                        {step === "success" && (<SuccessStep></SuccessStep>)}
+                        {step === "error" && (<ErrorStep></ErrorStep>)}
+                    </>
                 )}
             </Formik>
-        </div>
+        </div >
     );
 };
