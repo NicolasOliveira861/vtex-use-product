@@ -4,7 +4,7 @@ import { Formik, FormikHelpers } from "formik";
 import styles from "./B2bForm.css";
 import { registerSchema } from "./B2bFormRegisterSchema";
 import saveData from "./B2bFormSaveData";
-import FormStep from "./steps/formStep";
+import FormStep from "./steps/FormStep";
 import SuccessStep from "./steps/SuccessStep";
 import ErrorStep from "./steps/ErrorStep";
 
