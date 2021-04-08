@@ -1,5 +1,8 @@
 {
   "exemple": {
     "component": "Exemple"
+  },
+  "formB2b": {
+    "component": "B2bForm"
   }
 }
