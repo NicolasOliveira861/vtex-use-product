@@ -4,5 +4,9 @@
   },
   "formB2b": {
     "component": "B2bForm"
+  },
+  "m3-responsive-render": {
+    "component": "ResponsiveRender",
+    "composition": "children"
   }
 }
