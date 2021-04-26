@@ -1,8 +1,9 @@
 *node_modules
-styles/css
 node_modules
+
 # para arquivos sass e scss
 
+storefront/styles/css
 **/*.sass-cache/
 **/*.css.map
 

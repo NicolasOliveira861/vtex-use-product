@@ -55,6 +55,7 @@
     "challenge-permission#selling-price": {
         "blocks": ["allowed-content#selling-price", "disallowed-content#price"]
     },
+
     "allowed-content#selling-price": {
         "children": ["product-selling-price"]
     },
@@ -72,5 +73,9 @@
     },
     "allowed-content#general3-price": {
         "children": ["product-list-price", "product-price-savings"]
+    },
+
+    "disallowed-content#price": {
+        "children": []
     }
 }
