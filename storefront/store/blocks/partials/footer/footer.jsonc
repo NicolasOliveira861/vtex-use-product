@@ -164,7 +164,12 @@
     "image#footer-powered-by-vtex--image": {
         "props": {
             "src": "assets/svgs/vtex.svg",
-            "maxHeight": 20
+            "maxHeight": 20,
+            "link": {
+                "url": "https://vtex.com",
+                "attributeTitle": "VTEX",
+                "openNewTab": true
+            }
         }
     },
     "rich-text#footer-powered-by-m3--text": {
@@ -176,7 +181,12 @@
     "image#footer-powered-by-m3--image": {
         "props": {
             "src": "assets/svgs/m3.svg",
-            "maxHeight": 20
+            "maxHeight": 20,
+            "link": {
+                "url": "https://m3ecommerce.com/",
+                "attributeTitle": "M3",
+                "openNewTab": true
+            }
         }
     },
     "footer-layout.mobile": {
