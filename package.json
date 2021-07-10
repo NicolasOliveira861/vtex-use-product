@@ -18,7 +18,8 @@
         "lint:storefront": "yarn workspace storefront lint",
         "lint:checkout": "yarn workspace checkout lint",
         "lint:custom": "yarn workspace custom lint",
-        "lint": "yarn lint:custom && yarn lint:checkout && lint:storefront"
+        "lint": "yarn lint:custom && yarn lint:checkout && lint:storefront",
+        "postinstall": "cd custom && yarn install:all"
     },
     "workspaces": [
         "custom",
