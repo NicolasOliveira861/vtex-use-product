@@ -7,12 +7,15 @@
 
 export default function waitForEl(selector) {
     return new Promise((resolve) => {
-        if (jQuery(selector).length) {
-            resolve(jQuery(selector));
-        } else {
-            setTimeout(function () {
-                waitForEl(selector, callback);
-            }, 100);
+        function waitForElCb(selector) {
+            if (jQuery(selector).length) {
+                resolve(jQuery(selector));
+            } else {
+                setTimeout(function () {
+                    waitForElCb(selector);
+                }, 100);
+            }
         }
+        waitForElCb(selector);
     });
 }

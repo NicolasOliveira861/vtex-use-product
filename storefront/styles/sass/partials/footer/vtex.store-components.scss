@@ -25,7 +25,6 @@
 }
 .inputGroup--m3-newsletter :global(.vtex-input-prefix__group) {
   border: 2px solid $color-gray4;
-  border-radius: 0;
   height: 42px;
   max-width: 270px;
   border-radius: 5px;
@@ -48,7 +47,6 @@
 }
 .buttonContainer--m3-newsletter :global(.vtex-button) {
   background: #373835;
-  border-radius: 5px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -63,7 +61,7 @@
 
 .buttonContainer--m3-newsletter :global(.vtex-button):hover {
   background: #303030;
-} 
+}
 .label--m3-newsletter {
   font-family: "Roboto", sans-serif;
   font-style: normal;
