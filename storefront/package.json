@@ -26,9 +26,9 @@
         "glob": "^7.1.6",
         "gulp": "^4.0.2",
         "gulp-concat": "^2.6.1",
-        "gulp-sass": "^4.1.0",
+        "gulp-sass": "^5.0.0",
         "gulp-wait": "0.0.2",
-        "node-sass": "^5.0.0"
+        "sass": "^1.37.5"
     },
     "dependencies": {}
 }

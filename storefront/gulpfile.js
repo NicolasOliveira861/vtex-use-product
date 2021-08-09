@@ -1,8 +1,9 @@
 const gulp = require("gulp"),
-    sass = require("gulp-sass"),
     concat = require("gulp-concat"),
     path = require("path"),
     glob = require("glob");
+
+const sass = require("gulp-sass")(require("sass"));
 
 // @TODO: melhorar a organização
 /**
