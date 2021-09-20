@@ -28,7 +28,7 @@
         }
     },
     "header-row#5-desktop": {
-        "children": ["vtex.menu@2.x:menu#category-menu"],
+        "children": ["dynamic-menu"],
         "props": {
             "sticky": false,
             "blockClass": "main-header-menu"
@@ -75,12 +75,19 @@
         }
     },
     "header-row#1-mobile": {
-        "children": ["drawer", "logo#mobile", "minicart.v2"],
+        "children": ["flex-layout.row#menuHam", "logo#mobile", "minicart.v2"],
         "props": {
             "sticky": true,
             "blockClass": "main-header-mobile"
         }
     },
+    "flex-layout.row#menuHam": {
+        "children": ["dynamic-menu#mobile"],
+        "props": {
+            "blockClass": "menuHam"
+        }
+    },
+
     "header-row#2-mobile": {
         "children": ["search-bar#mobile"],
         "props": {

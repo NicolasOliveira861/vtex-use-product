@@ -267,7 +267,7 @@
 //               imageTag:
 //                 '<img src="~/arquivos/ids/155397-#width#-#height#/Barra-de-Nuts.jpg?v=637393344579030000" width="#width#" height="#height#" alt="BARRA-DE-NUTS-COM-BANANA-E-QUINOA-ZERO-ACUCAR-CUIDA-BEM-30g" id="" />',
 //               imageUrl:
-//                 "https://santahelena.vtexassets.com/arquivos/ids/155397/Barra-de-Nuts.jpg?v=637393344579030000",
+//                 "https://agenciam3.vtexassets.com/arquivos/ids/155397/Barra-de-Nuts.jpg?v=637393344579030000",
 //               imageText:
 //                 "BARRA-DE-NUTS-COM-BANANA-E-QUINOA-ZERO-ACUCAR-CUIDA-BEM-30g",
 //               __typename: "Image",
@@ -278,7 +278,7 @@
 //           sellers: [
 //             {
 //               sellerId: "1",
-//               sellerName: "SANTA HELENA INDUSTRIA DE ALIMENTOS S/A",
+//               sellerName: "AGENCIA M3",
 //               __typename: "Seller",
 //               addToCartLink:
 //                 "https://portal.vtexcommercestable.com.br/checkout/cart/add?sku=1294&qty=1&seller=1&sc=1&price=429&cv=921d3af1fba3bc3b2974b5aa22dd64c6_&sc=1",

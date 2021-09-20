@@ -49,7 +49,7 @@
             // "width": "200px",
             // "height": "60px",
             // "initialContent": "<link rel='stylesheet' href='https://agenciamagma.ecommercetools.com.br/arquivos/kadu/specs.css'><script src='https://unpkg.com/jquery@3.3.1/dist/jquery.min.js'></script><script defer src='https://agenciamagma.ecommercetools.com.br/arquivos/kadu/specs.js'></script>",
-            "initialContent": "<link rel='stylesheet' href='https://santahelena.vteximg.com.br/arquivos/specs.css'><script src='https://unpkg.com/jquery@3.3.1/dist/jquery.min.js'></script><script defer src='https://santahelena.vteximg.com.br/arquivos/specs.js'></script>",
+            "initialContent": "<link rel='stylesheet' href='https://agenciam3.vteximg.com.br/arquivos/specs.css'><script src='https://unpkg.com/jquery@3.3.1/dist/jquery.min.js'></script><script defer src='https://agenciam3.vteximg.com.br/arquivos/specs.js'></script>",
             "allowCookies": true
         }
     },
