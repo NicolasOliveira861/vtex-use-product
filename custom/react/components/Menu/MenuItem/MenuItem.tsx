@@ -82,9 +82,9 @@ export const MenuItem: React.FC<MenuItemProps> = ({
                                                     styles.subMenuItem
                                                 }
                                                 ${
-                                                    isNextItemHighlight &&
+                                        isNextItemHighlight &&
                                                     styles.subMenuLastItem
-                                                }`}
+                                        }`}
                                             >
                                                 <Link
                                                     to={item.href}
