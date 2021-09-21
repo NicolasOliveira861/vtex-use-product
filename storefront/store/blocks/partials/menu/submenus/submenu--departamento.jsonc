@@ -101,7 +101,7 @@
             }
         }
     },
-    "menu-item#santa-helena": {
+    "menu-item#agencia-m3": {
         "props": {
             "blockClass": "custom-dropdown-submenu-links-item",
             "id": "menu-item-amendoim",
@@ -110,7 +110,7 @@
             "highlight": false,
             "itemProps": {
                 "categoryId": 1,
-                "text": "Santa Helena"
+                "text": "Agencia M3"
             }
         }
     },

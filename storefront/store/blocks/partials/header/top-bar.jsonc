@@ -9,8 +9,8 @@
     },
     "link#top-bar": {
         "props": {
-            "href": "Ganhe dinheiro vendendo Santa Helena",
-            "label": "Ganhe dinheiro vendendo Santa Helena",
+            "href": "Agencia M3",
+            "label": "Agencia M3",
             "blockClass": "top-bar"
         }
     }
