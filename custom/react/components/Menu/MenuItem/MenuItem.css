@@ -1,6 +1,8 @@
 .menuItem {
-    margin: 0 auto;
-    /* text-transform: uppercase; */
+    margin: 0 20px 0 0;
+}
+.menuItem:last-child {
+    margin: 0;
 }
 
 .menuItemLink {
