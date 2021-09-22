@@ -48,27 +48,21 @@ export const DynamicMenu: StorefrontFunctionComponent<MenuSchema> = (
             <ul className={styles.menu}>
                 {props.items.map((item, i) => {
                     return (
-                        <a
-                            href={item.MenuItemProps?.href}
-                            className={styles.wrapMenuItem}
+                        <MenuItem
+                            href={
+                                item.MenuItemProps?.href
+                                    ? item.MenuItemProps?.href
+                                    : ""
+                            }
+                            title={item.MenuItemProps?.title}
+                            content={item.MenuItemProps?.content}
+                            items={item.MenuItemProps?.items}
+                            internal={item.MenuItemProps?.internal}
+                            banner={item.MenuItemProps?.banner}
+                            bannerUrl={item.MenuItemProps?.bannerUrl}
+                            MenuItemProps={item}
                             key={i}
-                        >
-                            <MenuItem
-                                href={
-                                    item.MenuItemProps?.href
-                                        ? item.MenuItemProps?.href
-                                        : ""
-                                }
-                                title={item.MenuItemProps?.title}
-                                content={item.MenuItemProps?.content}
-                                items={item.MenuItemProps?.items}
-                                internal={item.MenuItemProps?.internal}
-                                banner={item.MenuItemProps?.banner}
-                                bannerUrl={item.MenuItemProps?.bannerUrl}
-                                MenuItemProps={item}
-                                key={i}
-                            />
-                        </a>
+                        />
                     );
                 })}
             </ul>
