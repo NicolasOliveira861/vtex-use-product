@@ -5,7 +5,7 @@ const gulp = require("gulp"),
     sourcemaps = require("gulp-sourcemaps"),
     autoprefixer = require("gulp-autoprefixer"),
     rename = require("gulp-rename"),
-    sass = require("gulp-sass");
+    sass = require("gulp-sass")(require("sass"));
 
 /**
     ___ _           _            _             _
@@ -84,7 +84,7 @@ function scripts() {
             console.log(
                 stats.toString({
                     all: false,
-                    modules: true,
+                    modules: false,
                     maxModules: 0,
                     errors: true,
                     warnings: true,

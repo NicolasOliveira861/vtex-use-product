@@ -1,8 +1,6 @@
-const webpack = require("webpack");
 const { merge } = require("webpack-merge");
 const common = require("./webpack.common.js");
 const TerserPlugin = require("terser-webpack-plugin");
-const path = require("path");
 
 module.exports = merge(common, {
     externals: {
@@ -14,8 +12,7 @@ module.exports = merge(common, {
         rules: [
             {
                 test: /\.(js|jsx)$/,
-                exclude: /(node_modules|bower_components)/,
-                include: path.resolve(__dirname, "..", "src/arquivos/js"),
+                exclude: /node_modules\/(?!(@agenciam3\/pkg)\/).*/,
                 use: {
                     loader: "babel-loader",
                     options: {
