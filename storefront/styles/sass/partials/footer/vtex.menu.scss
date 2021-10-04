@@ -3,7 +3,7 @@
 /* ------------------------------------------------------------------------------------ */
 
 .menuContainerNav--footer-menu-links {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -68,6 +68,6 @@
   .accordionIcon--header-menu-accordion-title--isClosed, .accordionIcon--header-menu-accordion-title--isOpen {
     font-size: 20px;
     color: #292929;
-    font-weight: 300; 
+    font-weight: 300;
   }
 }
