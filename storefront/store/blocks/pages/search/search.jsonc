@@ -3,7 +3,7 @@
         "props": {
             "context": {
                 "skusFilter": "ALL",
-                "simulationBehavior": "skip"
+                "simulationBehavior": "default"
             }
         },
 

@@ -5,7 +5,7 @@
                 "orderByField": "OrderByTopSaleDESC",
                 "maxItemsPerPage": 9,
                 "skusFilter": "ALL",
-                "simulationBehavior": "skip"
+                "simulationBehavior": "default"
             }
         },
 
