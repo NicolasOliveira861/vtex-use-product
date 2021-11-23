@@ -13,7 +13,6 @@ const MenuBottomMobile = () => {
         {
             fetchPolicy: "network-only",
         }
-        // { variables: { language: "english" } }
     );
 
     useEffect(() => {
