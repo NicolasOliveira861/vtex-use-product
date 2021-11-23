@@ -5,7 +5,6 @@ const gulp = require("gulp"),
 
 const sass = require("gulp-sass")(require("sass"));
 
-// @TODO: melhorar a organização
 /**
    ___ _                __             _      ___
  / __| |_ ___ _ _ ___ / _|_ _ ___ _ _| |_   / __| __ _ ______

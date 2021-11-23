@@ -4,7 +4,7 @@ export default class CatalogService {
 
         const responses = await Promise.all(skusPromises);
 
-        return await Promise.all(responses.map((r) => r.json()));
+        return Promise.all(responses.map((r) => r.json()));
     }
 
     getSkuData(sku) {

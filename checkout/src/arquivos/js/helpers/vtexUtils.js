@@ -37,10 +37,9 @@ export function getPrice(price) {
     }
 
     if (isNaN(price)) {
-        let newPrice = parseFloat(
+        return parseFloat(
             price.replace("R$", "").replace(".", "").replace(",", ".")
         );
-        return newPrice;
     } else {
         price = price || 0;
         price = price.toLocaleString("pt-BR", {
@@ -59,15 +58,16 @@ export function formatCurrency() {
     });
 }
 
-export function obterCannalDeVendas() {
+export function getSellerChannel() {
     var name = "VTEXSC=sc=";
     var ca = document.cookie.split(";");
-    for (var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == " ") c = c.substring(1);
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
+    for (let c in ca) {
+        if (Object.hasOwnProperty.call(ca, c)) {
+            while (c.charAt(0) == " ") c = c.substring(1);
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
         }
     }
-    return 1;
+    return "1";
 }

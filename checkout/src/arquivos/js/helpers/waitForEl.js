@@ -7,9 +7,10 @@
 
 export default function waitForEl(selector) {
     return new Promise((resolve) => {
-        function waitForElCb(selector) {
-            if (jQuery(selector).length) {
-                resolve(jQuery(selector));
+        function waitForElCb(s) {
+            const el = jQuery(s);
+            if (el.length) {
+                resolve(el);
             } else {
                 setTimeout(function () {
                     waitForElCb(selector);
