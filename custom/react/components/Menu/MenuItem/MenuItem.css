@@ -51,9 +51,6 @@
     top: -14px;
 }
 
-.dynamicSubMenuItems {
-    list-style: none;
-}
 
 .subMenuItem {
     z-index: 2;
@@ -71,6 +68,7 @@
 }
 
 .dynamicSubMenuItems {
+    list-style: none;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
