@@ -61,13 +61,14 @@ export function formatCurrency() {
 export function getSellerChannel() {
     var name = "VTEXSC=sc=";
     var ca = document.cookie.split(";");
-    for (let c in ca) {
-        if (Object.hasOwnProperty.call(ca, c)) {
-            while (c.charAt(0) == " ") c = c.substring(1);
-            if (c.indexOf(name) == 0) {
-                return c.substring(name.length, c.length);
-            }
+    let res = "1";
+    ca.forEach((c) => {
+        let value = String(c);
+        while (value.charAt(0) == " ") value = value.substring(1);
+        if (value.indexOf(name) == 0) {
+            res = value.substring(name.length, value.length);
         }
-    }
-    return "1";
+    });
+
+    return res;
 }
