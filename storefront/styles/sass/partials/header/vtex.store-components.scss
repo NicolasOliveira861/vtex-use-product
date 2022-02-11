@@ -2,12 +2,6 @@
     border: 2px solid #f0f0f0;
     border-radius: 5px;
 }
-.searchBarInnerContainer :global(.vtex-store-components-3-x-portalContainer) {
-    position: absolute !important;
-    top: 0px;
-    left: -50% !important;
-    transform: translatex(50%);
-}
 
 .searchBarContainer :global(.vtex-input-prefix__group) {
     border: none;
