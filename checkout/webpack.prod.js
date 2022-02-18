@@ -6,6 +6,7 @@ module.exports = merge(common, {
     externals: {
         jquery: "jQuery",
         vtexjs: "vtexjs",
+        React: "react",
     },
     mode: "production",
     module: {
@@ -16,7 +17,7 @@ module.exports = merge(common, {
                 use: {
                     loader: "babel-loader",
                     options: {
-                        presets: [["@babel/preset-env"], "@babel/react"],
+                        presets: [["@babel/preset-env"], "@babel/preset-react"],
                         plugins: ["@babel/plugin-transform-async-to-generator"],
                         cacheDirectory: true,
                     },

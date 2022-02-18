@@ -1,3 +1,4 @@
+import "regenerator-runtime/runtime.js";
 import CheckoutUI from "./components/CheckoutUI";
 import { Container } from "@agenciam3/pkg";
 import Exemple from "./components/Exemple";

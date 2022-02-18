@@ -27,7 +27,7 @@ const paths = {
         watch: "src/arquivos/sass/**/*.scss",
     },
     scripts: {
-        watch: "src/arquivos/js/**/*.js",
+        watch: "src/arquivos/js/**/*.{js,jsx}",
     },
     img: {
         src: "src/arquivos/img/*.{png,gif,jpg}",

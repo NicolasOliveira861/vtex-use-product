@@ -15,10 +15,10 @@ module.exports = {
     },
     resolve: {
         alias: {
-            Helpers: path.resolve(__dirname, "..", "src/arquivos/js/helpers"),
-            Lib: path.resolve(__dirname, "..", "src/arquivos/js/lib"),
-            Config: path.resolve(__dirname, "..", "src/arquivos/js/config"),
-            App: path.resolve(__dirname, "..", "src/arquivos/js/app"),
+            Helpers: path.resolve(__dirname, "src/arquivos/js/helpers"),
+            Lib: path.resolve(__dirname, "src/arquivos/js/lib"),
+            Config: path.resolve(__dirname, "src/arquivos/js/config"),
+            App: path.resolve(__dirname, "src/arquivos/js/app"),
         },
     },
     plugins: [
