@@ -38,6 +38,7 @@
         "blocks": ["autocomplete-result-list.v2"],
         "props": {
             "openAutocompleteOnFocus": true,
+            "autocompleteAlignment": "center",
             "maxWidth": "264px",
             "placeholder": "Buscar...",
             "displayMode": "clear-button"
