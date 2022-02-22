@@ -1,7 +1,7 @@
 {
   "vendor": "agenciam3",
   "name": "template-agenciam3",
-  "version": "1.2.15",
+  "version": "1.2.16",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
