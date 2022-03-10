@@ -12,6 +12,10 @@ footer {
     margin-top: auto;
 }
 
+#vtexIdContainer {
+    position: fixed !important;
+}
+
 body {
     display: flex;
     flex-direction: column;
