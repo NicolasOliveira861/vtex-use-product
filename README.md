@@ -1,4 +1,4 @@
-# {NOME DA LOJA}
+# Cromus
 
 ## Instalação e desenvolvimento
 
