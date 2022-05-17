@@ -5195,6 +5195,10 @@ verror@1.10.0:
   version "0.40.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.40.0/public/@types/vtex.search-graphql#9afbb50071dce3a07a1070223ea7a75df26e9fe7"
 
+"vtex.slider-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.22.1/public/@types/vtex.slider-layout":
+  version "0.22.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.22.1/public/@types/vtex.slider-layout#99a036fbcd48fb1d0f12f61e9b5d169f1f8af511"
+
 "vtex.store-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-graphql@2.138.0/public/@types/vtex.store-graphql":
   version "2.138.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-graphql@2.138.0/public/@types/vtex.store-graphql#a802ff0193cfaf1d9bca8d2cf36134977ac1f40e"

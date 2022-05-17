@@ -47,7 +47,8 @@ const CustomShelf: StorefrontFunctionComponent = ({
                             ?.commertialOffer?.Price as number;
 
                         return (
-                            <div
+                            <a
+                                href={product?.link}
                                 className={styles.ProductContainer}
                                 key={product?.productId}
                             >
@@ -71,7 +72,7 @@ const CustomShelf: StorefrontFunctionComponent = ({
                                             .replace(".", ",")}
                                     </span>
                                 </div>
-                            </div>
+                            </a>
                         );
                     })}
                 </SliderLayout>
