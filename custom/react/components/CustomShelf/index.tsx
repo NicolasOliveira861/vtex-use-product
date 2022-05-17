@@ -10,10 +10,10 @@ interface SliderProps {
     productCluster: string;
 }
 
-const CustomShelf: StorefrontFunctionComponent = ({
+const CustomShelf: StorefrontFunctionComponent<SliderProps> = ({
     sliderLayoutProps,
     productCluster,
-}: SliderProps) => {
+}) => {
     const [productData, setProductData] = useState([]);
 
     const req = async () => {
@@ -32,11 +32,9 @@ const CustomShelf: StorefrontFunctionComponent = ({
         req().then((res) => {
             setProductData(res);
         });
-    }, []);
+    }, [productCluster]);
 
-    console.log(productData);
-
-    if (productData) {
+    if (productData.length > 0) {
         return (
             <div className={styles.CarouselContainer}>
                 <SliderLayout {...sliderLayoutProps}>
