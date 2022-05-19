@@ -29,5 +29,11 @@
         "content": {
             "$ref": "app:agenciam3.m3-custom#/definitions/CustomShelf"
         }
+    },
+    "m3-specifications-product": {
+        "component": "SpecificationsProduct"
+    },
+    "m3-informations-product": {
+        "component": "InformationsProduct"
     }
 }

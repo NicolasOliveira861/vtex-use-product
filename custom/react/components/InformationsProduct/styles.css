@@ -1,0 +1,22 @@
+.containerInformations {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.flagNovo {
+    display: flex;
+    background: red;
+    width: fit-content;
+    padding: 5px 20px;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px 0 15px 0;
+}

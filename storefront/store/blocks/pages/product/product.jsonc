@@ -3,9 +3,7 @@
         "children": [
             "flex-layout.row#product-breadcrumb",
             "flex-layout.row#product-main",
-            "__fold__",
-            "tab-layout#product-details",
-            "flex-layout.row#product-page-shelf",
+            "m3-specifications-product",
             "newsletter#m3-newsletter"
         ]
     },
@@ -105,6 +103,7 @@
         },
         "children": [
             "flex-layout.row#product-name",
+            "m3-informations-product",
             "product-selling-price#m3",
             "product-installments#m3",
             "product-price-savings#m3",

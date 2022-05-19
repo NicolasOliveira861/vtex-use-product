@@ -1,0 +1,23 @@
+.containerSpecification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleSpecification {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.tableSpecifications {
+    margin-top: 25px;
+}
+
+.rowSpecification {
+    display: flex;
+}
+
+.rowSpecification span:first-child {
+    font-weight: 600;
+    margin-right: 3px;
+}
